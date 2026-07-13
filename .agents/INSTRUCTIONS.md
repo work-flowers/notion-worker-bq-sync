@@ -6,6 +6,7 @@ Overall workers documentation lives at https://developers.notion.com/workers/get
 - `src/index.ts` defines the worker and capabilities.
 - Shared agent skills live in `.agents/skills/`. `.claude/skills` is kept as a compatibility symlink for Claude-specific discovery.
 - Generated: `dist/` build output, `workers.json` CLI config.
+- Project memory (context, decisions, submissions) lives in `memory/`, versioned in Git.
 
 ## Worker & Capability API (SDK)
 - `@notionhq/workers` provides `Worker`, schema helpers, and builders; the `ntn` CLI powers worker management.
